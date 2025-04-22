@@ -143,10 +143,21 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
+    - name: Core Platform Services
+      description: Underlying services essential to Delzory’s product delivery, availability, and performance.
       closed: true
-    - name: Empty Category
+    - name: Authentication & Identity
+      description: Services responsible for user login, access control, and identity federation.
+      closed: true
+    - name: Network & Edge Services
+      description: Infrastructure supporting global delivery, routing, and DNS resolution.
+      closed: true
+    - name: API & Backend Systems
+      description: Core APIs and backend logic critical to platform functionality.
+      closed: true
+    - name: Learning Platform
+      description: Scalable learning environments and administrative tools.
+      closed: true
     - name: Uncategorized
       untitled: true
 
@@ -158,21 +169,141 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+  # Public-Facing Properties
+  - name: Main Website
+    description: Public homepage and product information portal.
+    category: Core Platform Services
+  - name: Documentation
+    description: Setup guides, technical documentation, and integration resources.
+    category: Core Platform Services
+  - name: Blog
+    description: Product news, release announcements, and company updates.
+    category: Core Platform Services
+  - name: Status Page
+    description: Real-time system availability and incident history.
+    category: Core Platform Services
+  # Internal Publishing & Site Management
+  - name: CMS Platform
+    description: Backend system for content updates and site publishing.
+    category: API & Backend Systems
+  - name: Domain Routing
+    description: DNS configuration and domain-level routing for all hosted sites.
+    category: Network & Edge Services
+  - name: TLS & Certificates
+    description: SSL certificate management and HTTPS enforcement across all services.
+    category: Network & Edge Services
+  # Managed Website Infrastructure
+  - name: Hosted Sites
+    description: Public-facing websites deployed and managed by the platform.
+    category: Core Platform Services
+  - name: Site Management Console
+    description: Editing, publishing, and workflow tools for managed web properties.
+    category: API & Backend Systems
+  - name: Publishing Workflows
+    description: Scheduled publishing, versioning, and editorial approvals.
+    category: API & Backend Systems
+  - name: Custom Domains
+    description: Domain routing and DNS services for externally managed web properties.
+    category: Network & Edge Services
+  - name: Certificate Management
+    description: SSL provisioning and renewal for custom domain configurations.
+    category: Network & Edge Services
+  - name: Access Management
+    description: Role-based permissions, authentication, and user controls.
+    category: Authentication & Identity
+  - name: Web Analytics
+    description: Traffic, engagement, and performance insights for hosted websites.
+    category: Core Platform Services
+  - name: Control Panel
+    description: Central interface for service access, site status, and support requests.
+    category: Core Platform Services
+    # --- Authentication & Identity ---
+  - name: Authentication Portal
+    description: Central login interface for accessing all Delzory-managed services.
+    category: Authentication & Identity
+  - name: Single Sign-On (SSO)
+    description: Enables identity federation with third-party authentication providers.
+    category: Authentication & Identity
+  - name: Role & Permission Management
+    description: Defines and enforces access levels across all services.
+    category: Authentication & Identity
+  # --- Network & Edge Services ---
+  - name: Global CDN
+    description: Content caching and delivery acceleration for web and learning platforms.
+    category: Network & Edge Services
+  - name: Web Application Firewall (WAF)
+    description: Protects all services from common web threats and attack vectors.
+    category: Network & Edge Services
+  - name: DNS Resolution
+    description: Domain name resolution services for Delzory-hosted web properties.
+    category: Network & Edge Services
+  # --- API & Backend Systems ---
+  - name: Data Sync Service
+    description: Handles real-time and scheduled data synchronization with external systems.
+    category: API & Backend Systems
+  - name: Queue Processing
+    description: Executes background jobs and asynchronous platform operations.
+    category: API & Backend Systems
+  - name: Webhook Delivery
+    description: Sends real-time event notifications to connected external endpoints.
+    category: API & Backend Systems
+  - name: Automation Engine
+    description: Orchestrates backend tasks, rules, and service workflows.
+    category: API & Backend Systems
+  # --- Core Platform Services ---
+  - name: File Uploads
+    description: Manages secure document and media uploads across all services.
+    category: Core Platform Services
+  - name: Media Hosting
+    description: Hosts and serves media files including images, documents, and attachments.
+    category: Core Platform Services
+  - name: Email Delivery
+    description: Sends account-related, notification, and transactional emails.
+    category: Core Platform Services
+  - name: Billing & Subscription Management
+    description: Handles invoices, payment processing, and subscription settings.
+    category: Core Platform Services
+  # --- Learning Platform ---
+  - name: Learning Assessment Tools
+    description: Quiz, grading, and test engine used for interactive evaluations.
+    category: Learning Platform
+  - name: Learning Video Streaming
+    description: Streams instructional videos and media content to learners.
+    category: Learning Platform
+  - name: Learning LTI Gateway
+    description: Supports learning tool interoperability with third-party educational tools.
+    category: Learning Platform
+  - name: Learning Content Authoring Tools
+    description: Enables the creation of rich, interactive course content.
+    category: Learning Platform
+  - name: Student Learning Portal
+    description: Learner-facing portal for accessing courses, assignments, and progress tracking.
+    category: Learning Platform
+  - name: Instructor Learning Portal
+    description: Tools and dashboards for instructors to manage courses, content, and grading.
+    category: Learning Platform
+  - name: Admin Learning Console
+    description: Administrative interface for configuring learning environments and managing users.
+    category: Learning Platform
+  - name: Course Enrollment
+    description: Registration and enrollment workflows for students and instructors.
+    category: Learning Platform
+  - name: Learning Analytics
+    description: Tracks learner progress, engagement, and outcomes across courses.
+    category: Learning Platform
+  - name: Learning Platform Notifications
+    description: Sends course announcements, reminders, and platform alerts to users.
+    category: Learning Platform
+  - name: Learning Platform File Storage
+    description: Stores and delivers course files, assignments, and learning materials.
+    category: Learning Platform
+  - name: Learning Platform Feedback & Surveys
+    description: Gathers learner and instructor feedback through forms and course evaluations.
+    category: Learning Platform
 
+
+    
+    
   # What date format to use?
   #
   # Hugo formatting docs:

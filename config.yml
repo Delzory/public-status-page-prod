@@ -143,23 +143,29 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: Core Platform Services
-      description: Underlying services essential to Delzory’s product delivery, availability, and performance.
-      closed: true
-    - name: Authentication & Identity
-      description: Services responsible for user login, access control, and identity federation.
-      closed: true
-    - name: Network & Edge Services
-      description: Infrastructure supporting global delivery, routing, and DNS resolution.
-      closed: true
-    - name: API & Backend Systems
-      description: Core APIs and backend logic critical to platform functionality.
-      closed: true
-    - name: Learning Platform
-      description: Scalable learning environments and administrative tools.
-      closed: true
-    - name: Uncategorized
-      untitled: true
+  - name: Public-Facing Services
+    description: Customer-visible assets like websites, documentation, and public APIs.
+    closed: true
+  - name: Customer Portal & Experience
+    description: Services for customer interaction, account management, and billing.
+    closed: true
+  - name: Learning & Education Services
+    description: Components supporting LMS environments, assessment tools, and content delivery.
+    closed: true
+  - name: Core SaaS Platform
+    description: Primary services enabling application delivery, hosting, and file/media support.
+    closed: true
+  - name: Backend & Infrastructure
+    description: Internal systems, APIs, and background processors critical to functionality.
+    closed: true
+  - name: Network & Security Edge
+    description: Global infrastructure responsible for routing, certificates, and secure delivery.
+    closed: true
+  - name: Identity & Access
+    description: Authentication, SSO, role-based access control, and identity integrations.
+    closed: true
+  - name: Uncategorized
+    untitled: true
 
   # These are your systems. Change them to
   # change the amount of components.
@@ -172,135 +178,130 @@ params:
   # Public-Facing Properties
   - name: Main Website
     description: Public homepage and product information portal.
-    category: Core Platform Services
+    category: Public-Facing Services
   - name: Documentation
     description: Setup guides, technical documentation, and integration resources.
-    category: Core Platform Services
+    category: Public-Facing Services
   - name: Blog
     description: Product news, release announcements, and company updates.
-    category: Core Platform Services
+    category: Public-Facing Services
   - name: Status Page
     description: Real-time system availability and incident history.
-    category: Core Platform Services
-  # Internal Publishing & Site Management
-  - name: CMS Platform
-    description: Backend system for content updates and site publishing.
-    category: API & Backend Systems
-  - name: Domain Routing
-    description: DNS configuration and domain-level routing for all hosted sites.
-    category: Network & Edge Services
-  - name: TLS & Certificates
-    description: SSL certificate management and HTTPS enforcement across all services.
-    category: Network & Edge Services
-  # Managed Website Infrastructure
-  - name: Hosted Sites
-    description: Public-facing websites deployed and managed by the platform.
-    category: Core Platform Services
-  - name: Site Management Console
-    description: Editing, publishing, and workflow tools for managed web properties.
-    category: API & Backend Systems
-  - name: Publishing Workflows
-    description: Scheduled publishing, versioning, and editorial approvals.
-    category: API & Backend Systems
-  - name: Custom Domains
-    description: Domain routing and DNS services for externally managed web properties.
-    category: Network & Edge Services
-  - name: Certificate Management
-    description: SSL provisioning and renewal for custom domain configurations.
-    category: Network & Edge Services
-  - name: Access Management
-    description: Role-based permissions, authentication, and user controls.
-    category: Authentication & Identity
-  - name: Web Analytics
-    description: Traffic, engagement, and performance insights for hosted websites.
-    category: Core Platform Services
+    category: Public-Facing Services
+  # Customer Portal & Experience
   - name: Control Panel
     description: Central interface for service access, site status, and support requests.
-    category: Core Platform Services
-    # --- Authentication & Identity ---
-  - name: Authentication Portal
-    description: Central login interface for accessing all Delzory-managed services.
-    category: Authentication & Identity
-  - name: Single Sign-On (SSO)
-    description: Enables identity federation with third-party authentication providers.
-    category: Authentication & Identity
-  - name: Role & Permission Management
-    description: Defines and enforces access levels across all services.
-    category: Authentication & Identity
-  # --- Network & Edge Services ---
-  - name: Global CDN
-    description: Content caching and delivery acceleration for web and learning platforms.
-    category: Network & Edge Services
-  - name: Web Application Firewall (WAF)
-    description: Protects all services from common web threats and attack vectors.
-    category: Network & Edge Services
-  - name: DNS Resolution
-    description: Domain name resolution services for Delzory-hosted web properties.
-    category: Network & Edge Services
-  # --- API & Backend Systems ---
-  - name: Data Sync Service
-    description: Handles real-time and scheduled data synchronization with external systems.
-    category: API & Backend Systems
-  - name: Queue Processing
-    description: Executes background jobs and asynchronous platform operations.
-    category: API & Backend Systems
-  - name: Webhook Delivery
-    description: Sends real-time event notifications to connected external endpoints.
-    category: API & Backend Systems
-  - name: Automation Engine
-    description: Orchestrates backend tasks, rules, and service workflows.
-    category: API & Backend Systems
-  # --- Core Platform Services ---
-  - name: File Uploads
-    description: Manages secure document and media uploads across all services.
-    category: Core Platform Services
-  - name: Media Hosting
-    description: Hosts and serves media files including images, documents, and attachments.
-    category: Core Platform Services
+    category: Customer Portal & Experience
   - name: Email Delivery
     description: Sends account-related, notification, and transactional emails.
-    category: Core Platform Services
+    category: Customer Portal & Experience
   - name: Billing & Subscription Management
     description: Handles invoices, payment processing, and subscription settings.
-    category: Core Platform Services
-  # --- Learning Platform ---
+    category: Customer Portal & Experience
+  - name: Access Management
+    description: Role-based permissions, authentication, and user controls.
+    category: Customer Portal & Experience
+  # Learning & Education Services
   - name: Learning Assessment Tools
     description: Quiz, grading, and test engine used for interactive evaluations.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Learning Video Streaming
     description: Streams instructional videos and media content to learners.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Learning LTI Gateway
     description: Supports learning tool interoperability with third-party educational tools.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Learning Content Authoring Tools
     description: Enables the creation of rich, interactive course content.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Student Learning Portal
     description: Learner-facing portal for accessing courses, assignments, and progress tracking.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Instructor Learning Portal
     description: Tools and dashboards for instructors to manage courses, content, and grading.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Admin Learning Console
     description: Administrative interface for configuring learning environments and managing users.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Course Enrollment
     description: Registration and enrollment workflows for students and instructors.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Learning Analytics
     description: Tracks learner progress, engagement, and outcomes across courses.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Learning Platform Notifications
     description: Sends course announcements, reminders, and platform alerts to users.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Learning Platform File Storage
     description: Stores and delivers course files, assignments, and learning materials.
-    category: Learning Platform
+    category: Learning & Education Services
   - name: Learning Platform Feedback & Surveys
     description: Gathers learner and instructor feedback through forms and course evaluations.
-    category: Learning Platform
-
+    category: Learning & Education Services
+  # Core SaaS Platform
+  - name: Hosted Sites
+    description: Public-facing websites deployed and managed by the platform.
+    category: Core SaaS Platform
+  - name: File Uploads
+    description: Manages secure document and media uploads across all services.
+    category: Core SaaS Platform
+  - name: Media Hosting
+    description: Hosts and serves media files including images, documents, and attachments.
+    category: Core SaaS Platform
+  # Backend & Infrastructure
+  - name: CMS Platform
+    description: Backend system for content updates and site publishing.
+    category: Backend & Infrastructure
+  - name: Site Management Console
+    description: Editing, publishing, and workflow tools for managed web properties.
+    category: Backend & Infrastructure
+  - name: Publishing Workflows
+    description: Scheduled publishing, versioning, and editorial approvals.
+    category: Backend & Infrastructure
+  - name: Data Sync Service
+    description: Handles real-time and scheduled data synchronization with external systems.
+    category: Backend & Infrastructure
+  - name: Queue Processing
+    description: Executes background jobs and asynchronous platform operations.
+    category: Backend & Infrastructure
+  - name: Webhook Delivery
+    description: Sends real-time event notifications to connected external endpoints.
+    category: Backend & Infrastructure
+  - name: Automation Engine
+    description: Orchestrates backend tasks, rules, and service workflows.
+    category: Backend & Infrastructure
+  # Network & Security Edge
+  - name: Domain Routing
+    description: DNS configuration and domain-level routing for all hosted sites.
+    category: Network & Security Edge
+  - name: TLS & Certificates
+    description: SSL certificate management and HTTPS enforcement across all services.
+    category: Network & Security Edge
+  - name: Custom Domains
+    description: Domain routing and DNS services for externally managed web properties.
+    category: Network & Security Edge
+  - name: Certificate Management
+    description: SSL provisioning and renewal for custom domain configurations.
+    category: Network & Security Edge
+  - name: Global CDN
+    description: Content caching and delivery acceleration for web and learning platforms.
+    category: Network & Security Edge
+  - name: Web Application Firewall (WAF)
+    description: Protects all services from common web threats and attack vectors.
+    category: Network & Security Edge
+  - name: DNS Resolution
+    description: Domain name resolution services for Delzory-hosted web properties.
+    category: Network & Security Edge
+  # Identity & Access
+  - name: Authentication Portal
+    description: Central login interface for accessing all Delzory-managed services.
+    category: Identity & Access
+  - name: Single Sign-On (SSO)
+    description: Enables identity federation with third-party authentication providers.
+    category: Identity & Access
+  - name: Role & Permission Management
+    description: Defines and enforces access levels across all services.
+    category: Identity & Access
 
     
     

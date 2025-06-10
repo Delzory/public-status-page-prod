@@ -142,7 +142,6 @@ params:
   # 
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
-  params:
   categories:
     - name: Public Web Properties
       description: Public-facing content such as websites, documentation, and announcements.

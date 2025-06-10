@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Delzory Status
+title: Delzory Status Dashboard
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -142,34 +142,35 @@ params:
   # 
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
-  categories:
-  - name: "Public Web Properties"
-    description: "Public-facing content such as websites, documentation, and announcements."
+categories:
+  - name: Public Web Properties
+    description: Public-facing content such as websites, documentation, and announcements.
     closed: true
-  - name: "Customer Experience & Account Services"
-    description: "Interfaces for customer interaction, subscriptions, and communications."
+  - name: Customer Experience & Account Services
+    description: Interfaces for customer interaction, subscriptions, and communications.
     closed: true
-  - name: "Learning & Education Platform"
-    description: "Components powering LMS access, content delivery, assessments, and analytics."
+  - name: Learning & Education Platform
+    description: Components powering LMS access, content delivery, assessments, and analytics.
     closed: true
-  - name: "Core Application Services"
-    description: "Backend systems enabling hosting, file management, and platform scalability."
+  - name: Core Application Services
+    description: Backend systems enabling hosting, file management, and platform scalability.
     closed: true
-  - name: "Platform Infrastructure & Integrations"
-    description: "Background processes, APIs, and data synchronization pipelines."
+  - name: Platform Infrastructure & Integrations
+    description: Background processes, APIs, and data synchronization pipelines.
     closed: true
-  - name: "Network Edge & Security Services"
-    description: "Infrastructure for global delivery, TLS, DNS, and protective layers."
+  - name: Network Edge & Security Services
+    description: Infrastructure for global delivery, TLS, DNS, and protective layers.
     closed: true
-  - name: "Identity & Access Management"
-    description: "Centralized identity services including SSO, RBAC, and access control."
+  - name: Identity & Access Management
+    description: Centralized identity services including SSO, RBAC, and access control.
     closed: true
-  - name: "Service Delivery Zones"
-    description: "Regional service cluster health and routing zones."
+  - name: Service Delivery Zones
+    description: Monitors the health of physical service clusters by region.
     closed: true
-  - name: "Uncategorized"
+  - name: Uncategorized
     untitled: true
-    
+
+
   # These are your systems. Change them to
   # change the amount of components.
   #
@@ -177,186 +178,144 @@ params:
   #
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
-systems:
+ systems:
   # Public Web Properties
-  - name: "Main Website"
-    description: "Public-facing homepage and marketing portal."
-    category: "Public Web Properties"
-
-  - name: "Documentation Site"
-    description: "Technical documentation, setup guides, and API references."
-    category: "Public Web Properties"
-
-  - name: "Company Blog"
-    description: "Release notes, product updates, and company news."
-    category: "Public Web Properties"
-
-  - name: "System Status Page"
-    description: "Real-time platform health, maintenance events, and historical incidents."
-    category: "Public Web Properties"
-
+  - name: Main Website
+    description: Public-facing homepage and marketing portal.
+    category: Public Web Properties
+  - name: Documentation Site
+    description: Technical documentation, setup guides, and API references.
+    category: Public Web Properties
+  - name: Company Blog
+    description: Release notes, product updates, and company news.
+    category: Public Web Properties
+  - name: System Status Page
+    description: Real-time platform health, maintenance events, and historical incidents.
+    category: Public Web Properties
   # Customer Experience & Account Services
-  - name: "Customer Control Panel"
-    description: "Unified dashboard for service management, site status, and support access."
-    category: "Customer Experience & Account Services"
-
-  - name: "Help Desk"
-    description: "Primary support portal for general inquiries and ticket submissions."
-    category: "Customer Experience & Account Services"
-
-  - name: "Emergency Support Help Desk"
-    description: "High-priority support channel for urgent service-impacting issues."
-    category: "Customer Experience & Account Services"
-
-  - name: "Notification & Email Delivery"
-    description: "Outbound system for transactional emails, alerts, and communications."
-    category: "Customer Experience & Account Services"
-
-  - name: "Billing & Subscriptions"
-    description: "Manages invoicing, payments, renewals, and customer account billing."
-    category: "Customer Experience & Account Services"
-
+  - name: Customer Control Panel
+    description: Unified dashboard for service management, site status, and support access.
+    category: Customer Experience & Account Services
+  - name: Help Desk
+    description: Primary support portal for general inquiries and ticket submissions.
+    category: Customer Experience & Account Services
+  - name: Emergency Support Help Desk
+    description: High-priority support channel for urgent service-impacting issues.
+    category: Customer Experience & Account Services
+  - name: Notification & Email Delivery
+    description: Outbound system for transactional emails, alerts, and communications.
+    category: Customer Experience & Account Services
+  - name: Billing & Subscriptions
+    description: Manages invoicing, payments, renewals, and customer account billing.
+    category: Customer Experience & Account Services
   # Learning & Education Platform
-  - name: "Student Portal"
-    description: "Learner-facing LMS interface for course access, progress, and assignments."
-    category: "Learning & Education Platform"
-
-  - name: "Instructor Portal"
-    description: "Faculty tools for managing course content, grading, and learner tracking."
-    category: "Learning & Education Platform"
-
-  - name: "Admin Console (LMS)"
-    description: "Administrative environment for configuring learning systems and user access."
-    category: "Learning & Education Platform"
-
-  - name: "Course Authoring Tools"
-    description: "Content builder for creating, editing, and managing learning modules."
-    category: "Learning & Education Platform"
-
-  - name: "Assessment Engine"
-    description: "Grading, quiz, and exam infrastructure for evaluating learner performance."
-    category: "Learning & Education Platform"
-
-  - name: "Learning Media Streaming"
-    description: "Video delivery platform for course materials and on-demand content."
-    category: "Learning & Education Platform"
-
-  - name: "LMS Notification System"
-    description: "Sends alerts, reminders, and announcements within the learning platform."
-    category: "Learning & Education Platform"
-
-  - name: "Feedback & Evaluations"
-    description: "Surveys and feedback collection for continuous course and instructor improvement."
-    category: "Learning & Education Platform"
-
-  - name: "Enrollment Services"
-    description: "Course registration workflows and user provisioning."
-    category: "Learning & Education Platform"
-
-  - name: "Learning Analytics"
-    description: "Learner engagement tracking, outcome data, and platform usage insights."
-    category: "Learning & Education Platform"
-
-  - name: "LTI Integration Gateway"
-    description: "Third-party tool integration via Learning Tools Interoperability (LTI) standard."
-    category: "Learning & Education Platform"
-
+  - name: Student Portal
+    description: Learner-facing LMS interface for course access, progress, and assignments.
+    category: Learning & Education Platform
+  - name: Instructor Portal
+    description: Faculty tools for managing course content, grading, and learner tracking.
+    category: Learning & Education Platform
+  - name: Admin Console (LMS)
+    description: Administrative environment for configuring learning systems and user access.
+    category: Learning & Education Platform
+  - name: Course Authoring Tools
+    description: Content builder for creating, editing, and managing learning modules.
+    category: Learning & Education Platform
+  - name: Assessment Engine
+    description: Grading, quiz, and exam infrastructure for evaluating learner performance.
+    category: Learning & Education Platform
+  - name: Learning Media Streaming
+    description: Video delivery platform for course materials and on-demand content.
+    category: Learning & Education Platform
+  - name: LMS Notification System
+    description: Sends alerts, reminders, and announcements within the learning platform.
+    category: Learning & Education Platform
+  - name: Feedback & Evaluations
+    description: Surveys and feedback collection for continuous course and instructor improvement.
+    category: Learning & Education Platform
+  - name: Enrollment Services
+    description: Course registration workflows and user provisioning.
+    category: Learning & Education Platform
+  - name: Learning Analytics
+    description: Learner engagement tracking, outcome data, and platform usage insights.
+    category: Learning & Education Platform
+  - name: LTI Integration Gateway
+    description: Third-party tool integration via Learning Tools Interoperability (LTI) standard.
+    category: Learning & Education Platform
   # Core Application Services
-  - name: "Hosted Websites"
-    description: "Managed deployment of customer-facing websites."
-    category: "Core Application Services"
-
-  - name: "Media & File Uploads"
-    description: "Secure platform-wide support for uploading and distributing files and media."
-    category: "Core Application Services"
-
+  - name: Hosted Websites
+    description: Managed deployment of customer-facing websites.
+    category: Core Application Services
+  - name: Media & File Uploads
+    description: Secure platform-wide support for uploading and distributing files and media.
+    category: Core Application Services
   # Platform Infrastructure & Integrations
-  - name: "Content Management System (CMS)"
-    description: "Backend engine and editor interface for managing site content and publishing workflows."
-    category: "Platform Infrastructure & Integrations"
-
-  - name: "Automation & Queue Processing"
-    description: "Orchestrates background tasks, job queues, and internal service workflows."
-    category: "Platform Infrastructure & Integrations"
-
-  - name: "Data Synchronization Services"
-    description: "Syncs internal data pipelines and third-party integrations."
-    category: "Platform Infrastructure & Integrations"
-
-  - name: "Webhook & Event Dispatching"
-    description: "Real-time outbound delivery of platform events to external services."
-    category: "Platform Infrastructure & Integrations"
-
+  - name: Content Management System (CMS)
+    description: Backend engine and editor interface for managing site content and publishing workflows.
+    category: Platform Infrastructure & Integrations
+  - name: Automation & Queue Processing
+    description: Orchestrates background tasks, job queues, and internal service workflows.
+    category: Platform Infrastructure & Integrations
+  - name: Data Synchronization Services
+    description: Syncs internal data pipelines and third-party integrations.
+    category: Platform Infrastructure & Integrations
+  - name: Webhook & Event Dispatching
+    description: Real-time outbound delivery of platform events to external services.
+    category: Platform Infrastructure & Integrations
   # Network Edge & Security Services
-  - name: "Domain Routing & DNS"
-    description: "Manages domain name resolution and routing logic for all web properties."
-    category: "Network Edge & Security Services"
-
-  - name: "TLS & Certificate Services"
-    description: "Handles SSL certificate issuance, renewal, and enforcement across services."
-    category: "Network Edge & Security Services"
-
-  - name: "Content Delivery Network (CDN)"
-    description: "Global caching and edge content acceleration for all platforms."
-    category: "Network Edge & Security Services"
-
-  - name: "Web Application Firewall (WAF)"
-    description: "Protects against web threats and common vulnerabilities."
-    category: "Network Edge & Security Services"
-
-  - name: "Custom Domain Management"
-    description: "DNS and SSL management for customer-owned domains."
-    category: "Network Edge & Security Services"
-
+  - name: Domain Routing & DNS
+    description: Manages domain name resolution and routing logic for all web properties.
+    category: Network Edge & Security Services
+  - name: TLS & Certificate Services
+    description: Handles SSL certificate issuance, renewal, and enforcement across services.
+    category: Network Edge & Security Services
+  - name: Content Delivery Network (CDN)
+    description: Global caching and edge content acceleration for all platforms.
+    category: Network Edge & Security Services
+  - name: Web Application Firewall (WAF)
+    description: Protects against web threats and common vulnerabilities.
+    category: Network Edge & Security Services
+  - name: Custom Domain Management
+    description: DNS and SSL management for customer-owned domains.
+    category: Network Edge & Security Services
   # Identity & Access Management
-  - name: "Authentication Services"
-    description: "Core login, session control, and multi-factor authentication."
-    category: "Identity & Access Management"
-
-  - name: "Single Sign-On (SSO)"
-    description: "Federated login via providers like Entra ID, Google, or SAML."
-    category: "Identity & Access Management"
-
-  - name: "Role-Based Access Control (RBAC)"
-    description: "Enforces user permissions and access policies across all services."
-    category: "Identity & Access Management"
-
+  - name: Authentication Services
+    description: Core login, session control, and multi-factor authentication.
+    category: Identity & Access Management
+  - name: Single Sign-On (SSO)
+    description: Federated login via providers like Entra ID, Google, or SAML.
+    category: Identity & Access Management
+  - name: Role-Based Access Control (RBAC)
+    description: Enforces user permissions and access policies across all services.
+    category: Identity & Access Management
   # Service Delivery Zones
-  - name: "US-MWD-01"
-    description: "Midwest Region – Primary Service Cluster 1"
-    category: "Service Delivery Zones"
-
-  - name: "US-MWD-02"
-    description: "Midwest Region – Secondary Cluster 2"
-    category: "Service Delivery Zones"
-
-  - name: "US-MWD-03"
-    description: "Midwest Region – Tertiary Cluster 3 (DR)"
-    category: "Service Delivery Zones"
-
-  - name: "US-EST-01"
-    description: "East Coast – Primary Service Cluster 1"
-    category: "Service Delivery Zones"
-
-  - name: "US-EST-02"
-    description: "East Coast – Secondary Cluster 2"
-    category: "Service Delivery Zones"
-
-  - name: "US-EST-03"
-    description: "East Coast – Tertiary Cluster 3 (DR)"
-    category: "Service Delivery Zones"
-
-  - name: "US-WST-01"
-    description: "West Coast – Primary Service Cluster 1"
-    category: "Service Delivery Zones"
-
-  - name: "US-WST-02"
-    description: "West Coast – Secondary Cluster 2"
-    category: "Service Delivery Zones"
-
-  - name: "US-WST-03"
-    description: "West Coast – Tertiary Cluster 3 (DR)"
-    category: "Service Delivery Zones"
+  - name: US-MWD-01
+    description: Midwest Region – Primary Service Cluster 1
+    category: Service Delivery Zones
+  - name: US-MWD-02
+    description: Midwest Region – Secondary Cluster 2
+    category: Service Delivery Zones
+  - name: US-MWD-03
+    description: Midwest Region – Tertiary Cluster 3 (DR)
+    category: Service Delivery Zones
+  - name: US-EST-01
+    description: East Coast – Primary Service Cluster 1
+    category: Service Delivery Zones
+  - name: US-EST-02
+    description: East Coast – Secondary Cluster 2
+    category: Service Delivery Zones
+  - name: US-EST-03
+    description: East Coast – Tertiary Cluster 3 (DR)
+    category: Service Delivery Zones
+  - name: US-WST-01
+    description: West Coast – Primary Service Cluster 1
+    category: Service Delivery Zones
+  - name: US-WST-02
+    description: West Coast – Secondary Cluster 2
+    category: Service Delivery Zones
+  - name: US-WST-03
+    description: West Coast – Tertiary Cluster 3 (DR)
+    category: Service Delivery Zones
 
   # What date format to use?
   #

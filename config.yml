@@ -178,7 +178,7 @@ categories:
   #
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
- systems:
+  systems:
   # Public Web Properties
   - name: Main Website
     description: Public-facing homepage and marketing portal.

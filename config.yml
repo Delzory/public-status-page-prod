@@ -117,6 +117,7 @@ enableGitInfo: true
 # |                   Preferences                        | #
 # +------------------------------------------------------+ #
 ############################################################
+
 params:
   # Before setting up your systems, you need
   # to first define at least one category.
@@ -141,7 +142,7 @@ params:
   # 
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
-  categories:
+categories:
   - name: Public Web Properties
     description: Public-facing content such as websites, documentation, and announcements.
     closed: true
@@ -177,7 +178,7 @@ params:
   #
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
-   systems:
+ systems:
   # Public Web Properties
   - name: Main Website
     description: Public-facing homepage and marketing portal.

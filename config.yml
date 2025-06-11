@@ -143,26 +143,29 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-  - name: Public-Facing Services
-    description: Customer-visible assets like websites, documentation, and public APIs.
+  - name: Public Web Properties
+    description: Public-facing content such as websites, documentation, and announcements.
     closed: true
-  - name: Customer Portal & Experience
-    description: Services for customer interaction, account management, and billing.
+  - name: Customer Experience & Account Services
+    description: Interfaces for customer interaction, subscriptions, and communications.
     closed: true
-  - name: Learning & Education Services
-    description: Components supporting LMS environments, assessment tools, and content delivery.
+  - name: Learning & Education Platform
+    description: Components supporting LMS environments and educational content delivery.
     closed: true
-  - name: Core SaaS Platform
-    description: Primary services enabling application delivery, hosting, and file/media support.
+  - name: Core Application Services
+    description: Services enabling hosting, file management, and platform scalability.
     closed: true
-  - name: Backend & Infrastructure
-    description: Internal systems, APIs, and background processors critical to functionality.
+  - name: Platform Infrastructure & Integrations
+    description: Background processes, APIs, and data synchronization pipelines.
     closed: true
-  - name: Network & Security Edge
-    description: Global infrastructure responsible for routing, certificates, and secure delivery.
+  - name: Network Edge & Security Services
+    description: Infrastructure for global delivery, TLS, DNS, and protective layers.
     closed: true
-  - name: Identity & Access
-    description: Authentication, SSO, role-based access control, and identity integrations.
+  - name: Identity & Access Management
+    description: Centralized identity services including SSO, RBAC, and access control.
+    closed: true
+  - name: Service Delivery Zones
+    description: Monitors the health of zone-based service clusters across regions.
     closed: true
   - name: Uncategorized
     untitled: true
@@ -175,145 +178,157 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-  # Public-Facing Properties
-  - name: Main Website
-    description: Public homepage and product information portal.
-    category: Public-Facing Services
-  - name: Documentation
-    description: Setup guides, technical documentation, and integration resources.
-    category: Public-Facing Services
-  - name: Blog
-    description: Product news, release announcements, and company updates.
-    category: Public-Facing Services
-  - name: Status Page
-    description: Real-time system availability and incident history.
-    category: Public-Facing Services
-  # Customer Portal & Experience
-  - name: Control Panel
-    description: Central interface for service access, site status, and support requests.
-    category: Customer Portal & Experience
-  - name: Email Delivery
-    description: Sends account-related, notification, and transactional emails.
-    category: Customer Portal & Experience
-  - name: Billing & Subscription Management
-    description: Handles invoices, payment processing, and subscription settings.
-    category: Customer Portal & Experience
-  - name: Access Management
-    description: Role-based permissions, authentication, and user controls.
-    category: Customer Portal & Experience
-  # Learning & Education Services
-  - name: Learning Assessment Tools
-    description: Quiz, grading, and test engine used for interactive evaluations.
-    category: Learning & Education Services
-  - name: Learning Video Streaming
-    description: Streams instructional videos and media content to learners.
-    category: Learning & Education Services
-  - name: Learning LTI Gateway
-    description: Supports learning tool interoperability with third-party educational tools.
-    category: Learning & Education Services
-  - name: Learning Content Authoring Tools
-    description: Enables the creation of rich, interactive course content.
-    category: Learning & Education Services
-  - name: Student Learning Portal
-    description: Learner-facing portal for accessing courses, assignments, and progress tracking.
-    category: Learning & Education Services
-  - name: Instructor Learning Portal
-    description: Tools and dashboards for instructors to manage courses, content, and grading.
-    category: Learning & Education Services
-  - name: Admin Learning Console
-    description: Administrative interface for configuring learning environments and managing users.
-    category: Learning & Education Services
-  - name: Course Enrollment
-    description: Registration and enrollment workflows for students and instructors.
-    category: Learning & Education Services
-  - name: Learning Analytics
-    description: Tracks learner progress, engagement, and outcomes across courses.
-    category: Learning & Education Services
-  - name: Learning Platform Notifications
-    description: Sends course announcements, reminders, and platform alerts to users.
-    category: Learning & Education Services
-  - name: Learning Platform File Storage
-    description: Stores and delivers course files, assignments, and learning materials.
-    category: Learning & Education Services
-  - name: Learning Platform Feedback & Surveys
-    description: Gathers learner and instructor feedback through forms and course evaluations.
-    category: Learning & Education Services
-  # Core SaaS Platform
-  - name: Hosted Sites
-    description: Public-facing websites deployed and managed by the platform.
-    category: Core SaaS Platform
-  - name: File Uploads
-    description: Manages secure document and media uploads across all services.
-    category: Core SaaS Platform
-  - name: Media Hosting
-    description: Hosts and serves media files including images, documents, and attachments.
-    category: Core SaaS Platform
-  # Backend & Infrastructure
-  - name: CMS Platform
-    description: Backend system for content updates and site publishing.
-    category: Backend & Infrastructure
-  - name: Site Management Console
-    description: Editing, publishing, and workflow tools for managed web properties.
-    category: Backend & Infrastructure
-  - name: Publishing Workflows
-    description: Scheduled publishing, versioning, and editorial approvals.
-    category: Backend & Infrastructure
-  - name: Data Sync Service
-    description: Handles real-time and scheduled data synchronization with external systems.
-    category: Backend & Infrastructure
-  - name: Queue Processing
-    description: Executes background jobs and asynchronous platform operations.
-    category: Backend & Infrastructure
-  - name: Webhook Delivery
-    description: Sends real-time event notifications to connected external endpoints.
-    category: Backend & Infrastructure
-  - name: Automation Engine
-    description: Orchestrates backend tasks, rules, and service workflows.
-    category: Backend & Infrastructure
-  # Network & Security Edge
-  - name: Domain Routing
-    description: DNS configuration and domain-level routing for all hosted sites.
-    category: Network & Security Edge
-  - name: TLS & Certificates
-    description: SSL certificate management and HTTPS enforcement across all services.
-    category: Network & Security Edge
-  - name: Custom Domains
-    description: Domain routing and DNS services for externally managed web properties.
-    category: Network & Security Edge
-  - name: Certificate Management
-    description: SSL provisioning and renewal for custom domain configurations.
-    category: Network & Security Edge
-  - name: Global CDN
-    description: Content caching and delivery acceleration for web and learning platforms.
-    category: Network & Security Edge
-  - name: Web Application Firewall (WAF)
-    description: Protects all services from common web threats and attack vectors.
-    category: Network & Security Edge
-  - name: DNS Resolution
-    description: Domain name resolution services for Delzory-hosted web properties.
-    category: Network & Security Edge
-  # Identity & Access
-  - name: Authentication Portal
-    description: Central login interface for accessing all Delzory-managed services.
-    category: Identity & Access
-  - name: Single Sign-On (SSO)
-    description: Enables identity federation with third-party authentication providers.
-    category: Identity & Access
-  - name: Role & Permission Management
-    description: Defines and enforces access levels across all services.
-    category: Identity & Access
+    # Public-Facing Properties
+    - name: Main Website
+      description: Public homepage and product information.
+      category: Public Web Properties
+    - name: Documentation Site
+      description: Setup guides, technical documentation, and integration resources.
+      category: Public Web Properties
+    - name: Delzory Blog
+      description: Product news, release announcements, and company updates.
+      category: Public Web Properties
+    - name: Status Page
+      description: Platform health, maintenance events, and historical incidents.
+      category: Public Web Properties
+    # Customer Portal & Experience
+    - name: Customer Control Panel
+      description: Unified dashboard for service management, site status, and support.
+      category: Customer Experience & Account Services
+    - name: Customer Help Desk
+      description: Primary customer support for general inquiries and ticket submissions.
+      category: Customer Experience & Account Services
+    - name: Emergency Customer Support Help Desk
+      description: High-priority support channel for urgent service-impacting issues.
+      category: Customer Experience & Account Services
+    - name: Notification & Email Delivery
+      description: Outbound system for transactional emails, alerts, and communications.
+      category: Customer Experience & Account Services
+    - name: Billing & Subscriptions
+      description: Manages invoicing, payments, renewals, and customer account billing.
+      category: Customer Experience & Account Services
+    - name: Access Management
+      description: Role-based permissions, authentication, and user controls.
+      category: Customer Experience & Account Services
+    # Learning & Education Services
+    - name: Student Portal
+      description: Learner-facing LMS interface for course access, progress, and assignments.
+      category: Learning & Education Platform
+    - name: Instructor Portal
+      description: Faculty tools for managing course content, grading, and learner tracking.
+      category: Learning & Education Platform
+    - name: Admin Console (LMS)
+      description: Administrative environment for configuring learning systems.
+      category: Learning & Education Platform
+    - name: Course Authoring Tools
+      description: Content builder for creating, editing, and managing learning modules.
+      category: Learning & Education Platform
+    - name: Assessment Engine
+      description: Grading, quiz, and exam infrastructure for evaluating learner performance.
+      category: Learning & Education Platform
+    - name: Learning Media Streaming
+      description: Video delivery platform for course materials and on-demand content.
+      category: Learning & Education Platform
+    - name: LMS Notification System
+      description: Sends alerts, reminders, and announcements within the learning platform.
+      category: Learning & Education Platform
+    - name: Feedback & Evaluations
+      description: Surveys and feedback collection for continuous improvement.
+      category: Learning & Education Platform
+    - name: Enrollment Services
+      description: Course registration workflows.
+      category: Learning & Education Platform
+    - name: Learning Analytics
+      description: Learner engagement tracking, outcome data, and platform usage insights.
+      category: Learning & Education Platform
+    - name: LTI Integration Gateway
+      description: Third-party integrations via LTI standard.
+      category: Learning & Education Platform
+    # Core Application Services
+    - name: Hosted Sites
+      description: Managed deployment of customer-facing websites.
+      category: Core Application Services
+    - name: Media & File Uploads
+      description: Platform-wide support for uploading and distributing files and media.
+      category: Core Application Services
+    # Platform Infrastructure & Integrations
+    - name: Content Management System (CMS)
+      description: Backend system for content updates and site publishing.
+      category: Platform Infrastructure & Integrations
+    - name: Automation & Queue Processing
+      description: Orchestrates background tasks, job queues, and internal service workflows.
+      category: Platform Infrastructure & Integrations
+    - name: Data Synchronization Services
+      description: Syncs internal data pipelines and third-party integrations.
+      category: Platform Infrastructure & Integrations
+    - name: Webhook & Event Dispatching
+      description: Real-time outbound delivery of platform events to external services.
+      category: Platform Infrastructure & Integrations
+    # Network Edge & Security Services
+    - name: Domain Routing & DNS
+      description: Manages domain name resolution and routing logic for all web properties.
+      category: Network Edge & Security Services
+    - name: TLS & Certificate Services
+      description: Handles SSL certificate issuance, renewal, and enforcement.
+      category: Network Edge & Security Services
+    - name: Content Delivery Network (CDN)
+      description: Global caching and edge content acceleration for all platforms.
+      category: Network Edge & Security Services
+    - name: Web Application Firewall (WAF)
+      description: Protects against web threats and common vulnerabilities.
+      category: Network Edge & Security Services
+    - name: Custom Domain Management
+      description: DNS and SSL management for customer-owned domains.
+      category: Network Edge & Security Services
+    # Identity & Access Management
+    - name: Authentication Services
+      description: Core login, session control, and multi-factor authentication.
+      category: Identity & Access Management
+    - name: Single Sign-On (SSO)
+      description: Enables identity federation with third-party authentication providers.
+      category: Identity & Access Management
+    - name: Role & Permission Management
+      description: Defines and enforces access levels across all services.
+      category: Identity & Access Management
+    # Service Delivery Zones
+    - name: US-EST-01
+      description: East Zone, Cluster 01
+      category: Service Delivery Zones
+    - name: US-EST-02
+      description: East Zone, Cluster 02
+      category: Service Delivery Zones
+    - name: US-EST-03
+      description: East Zone, Cluster 03
+      category: Service Delivery Zones
+    - name: US-WST-01
+      description: West Zone, Cluster 01
+      category: Service Delivery Zones
+    - name: US-WST-02
+      description: West Zone, Cluster 02
+      category: Service Delivery Zones
+    - name: US-WST-03
+      description: West Zone, Cluster 03
+      category: Service Delivery Zones
+    - name: US-MWT-01
+      description: Midwest Zone, Cluster 01
+      category: Service Delivery Zones
+    - name: US-MWT-02
+      description: Midwest Zone, Cluster 02
+      category: Service Delivery Zones
+    - name: US-MWT-03
+      description: Midwest Zone, Cluster 03
+      category: Service Delivery Zones
 
-    
-    
-  # What date format to use?
-  #
-  # Hugo formatting docs:
-  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-  #
-  # Technical: GOLANG/HUGO .Date.Format & dateFormat
-  #
-  # dateFormat Default: "January 2, 2006 at 3:04 PM"
-  # shortDateFormat Default: "15:04 — Jan 2"
+
+    # What date format to use?
+    #
+    # Hugo formatting docs:
+    # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+    #
+    # Technical: GOLANG/HUGO .Date.Format & dateFormat
+    #
+    # dateFormat Default: "January 2, 2006 at 3:04 PM"
+    # shortDateFormat Default: "15:04 — Jan 2"
   dateFormat: January 2, 2006 at 3:04 PM UTC
   shortDateFormat: 15:04 UTC — Jan 2
 

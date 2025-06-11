@@ -309,14 +309,14 @@ params:
     - name: US-WST-03
       description: West Zone, Cluster 03
       category: Service Delivery Zones
-    - name: US-WST-01
+    - name: US-MST-01
       description: Midwest Zone, Cluster 01
       category: Service Delivery Zones
     - name: US-WST-02
-      description: East Zone, Cluster 02
+      description: Midwest Zone, Cluster 02
       category: Service Delivery Zones
     - name: US-WST-03
-      description: East Zone, Cluster 03
+      description: Midwest Zone, Cluster 03
       category: Service Delivery Zones
 
 

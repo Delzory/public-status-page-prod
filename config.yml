@@ -315,7 +315,7 @@ params:
     - name: US-MWT-02
       description: Midwest Zone, Cluster 02
       category: Service Delivery Zones
-    - name: US-WWT-03
+    - name: US-MWT-03
       description: Midwest Zone, Cluster 03
       category: Service Delivery Zones
 

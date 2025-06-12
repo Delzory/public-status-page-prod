@@ -2,7 +2,7 @@
 title: Scheduled Maintenance — Learning & Education Platform
 date: 2025-01-14 12:00:00
 resolved: false
-severity: disrupted
+severity: notice
 affected:
   - Student Portal
   - Instructor Portal

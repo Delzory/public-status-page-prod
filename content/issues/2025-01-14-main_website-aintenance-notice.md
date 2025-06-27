@@ -1,6 +1,6 @@
 ---
 title: Scheduled Maintenance — Main Website
-date: 2025-01-14 12:00:00
+date: 2025-07-27 12:00:00
 resolved: false
 severity: notice
 affected:
@@ -8,7 +8,7 @@ affected:
 section: issue
 ---
 
-**Maintenance Notice (Eastern Time)** — As part of maintenance occurring on **January 14, 2025, from 7:00 AM ET to 11:00 PM ET**, our main website may experience intermittent interruptions.
+**Maintenance Notice (Eastern Time)** — As part of maintenance occurring on **June 27, 2025, from 7:00 AM ET to 11:00 PM ET**, our main website may experience intermittent interruptions.
 
 - **Main Website** will be undergoing scheduled infrastructure work.
 

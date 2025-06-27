@@ -1,6 +1,6 @@
 ---
 title: Scheduled Maintenance — Learning & Education Platform
-date: 2025-07-27 12:00:00
+date: 2025-06-27 12:00:00
 resolved: false
 severity: notice
 affected:

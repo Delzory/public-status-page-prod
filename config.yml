@@ -146,19 +146,19 @@ params:
   - name: Public Web Properties
     description: Public-facing content such as websites, documentation, and announcements.
     closed: true
-  - name: Customer Experience & Account Services
+  - name: Customer Experience
     description: Interfaces for customer interaction, subscriptions, and communications.
     closed: true
-  - name: Learning & Education Platform
+  - name: Delzory Learning
     description: Components supporting LMS environments and educational content delivery.
     closed: true
   - name: Core Application Services
     description: Services enabling hosting, file management, and platform scalability.
     closed: true
-  - name: Platform Infrastructure & Integrations
+  - name: Platform Infrastructure
     description: Background processes, APIs, and data synchronization pipelines.
     closed: true
-  - name: Network Edge & Security Services
+  - name: Network & Security
     description: Infrastructure for global delivery, TLS, DNS, and protective layers.
     closed: true
   - name: Identity & Access Management

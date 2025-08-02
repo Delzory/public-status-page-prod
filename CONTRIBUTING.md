@@ -71,6 +71,6 @@ Ways you can help:
 
 Direct code contributions are not open at this time.
 
-🛡️ For any conduct violations, please contact: *trustandsafety@delzory.com*
+🛡️ For any conduct violations, please contact: *contact@dev.delzory.com*
 
 🔒 For vulnerability disclosures, please see SECURITY.md
